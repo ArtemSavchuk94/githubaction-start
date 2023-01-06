@@ -1,0 +1,29 @@
+
+
+name: GitHubActions
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        name: Check out code
+      - run:  | 
+              echo Artem > index.html
+              echo Savchuk > index.html
+              cat index.html
+               
+      
+    
+       
+ 
+          
+          
+ 
+          
+          
+          
+          
+          
