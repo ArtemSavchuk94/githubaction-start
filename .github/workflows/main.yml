@@ -13,8 +13,9 @@ jobs:
           cd somedir
           touch sometext.txt
       - run : echo " Artem Savchuk " > somedir/sometext.txt
-      - run : ls 
-     
+      - run : | 
+          cd somedir
+          cat sometext.txt
       
       
     
