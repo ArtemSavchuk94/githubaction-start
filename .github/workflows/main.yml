@@ -8,18 +8,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run : sudo apt update && apt upgrade -y
-      - uses: actions/checkout@v3
-        name: Check out code
-      - run:  | 
-              echo Artem Savchuk > index.html
-              cat index.html
-               
+      - run : |
+          mkdir somedir
+          cd somedir
+          touch sometext.txt
+      - run : echo " Artem Savchuk " > somedir/sometext.txt
+      - run : cat index.html
+      
       
     
        
+
+
  
-          
           
  
           
